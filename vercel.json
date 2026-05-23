@@ -1,0 +1,107 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/products",
+      "destination": "/pages/products.html",
+      "permanent": false
+    },
+    {
+      "source": "/carpets",
+      "destination": "/pages/carpets.html",
+      "permanent": false
+    },
+    {
+      "source": "/janamaz",
+      "destination": "/pages/janamaz.html",
+      "permanent": false
+    },
+    {
+      "source": "/mats",
+      "destination": "/pages/mats.html",
+      "permanent": false
+    },
+    {
+      "source": "/wholesale",
+      "destination": "/pages/wholesale.html",
+      "permanent": false
+    },
+    {
+      "source": "/gallery",
+      "destination": "/pages/gallery.html",
+      "permanent": false
+    },
+    {
+      "source": "/contact",
+      "destination": "/pages/contact.html",
+      "permanent": false
+    },
+    {
+      "source": "/about",
+      "destination": "/pages/about.html",
+      "permanent": false
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/css/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "errorPage": "/pages/404.html"
+}

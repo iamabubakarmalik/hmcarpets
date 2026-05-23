@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Page Not Found - HM Carpets</title>
+  <meta name="description" content="The page you're looking for doesn't exist. Return to HM Carpets homepage." />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <meta name="theme-color" content="#E63946" />
+  <link rel="icon" type="image/png" href="../assets/logo/hm-logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #1A1A1A 0%, #2D1B1F 50%, #3D1A1F 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .error-bg {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        radial-gradient(circle at 20% 30%, rgba(230, 57, 70, 0.3) 0%, transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(230, 57, 70, 0.2) 0%, transparent 40%);
+      pointer-events: none;
+    }
+    .error-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 600px;
+      color: #fff;
+    }
+    .error-logo {
+      width: 100px;
+      margin: 0 auto 30px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    .error-code {
+      font-family: var(--font-display);
+      font-size: clamp(120px, 25vw, 220px);
+      font-weight: 900;
+      background: linear-gradient(135deg, #E63946 0%, #FFD700 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+      margin-bottom: 20px;
+      letter-spacing: -8px;
+    }
+    .error-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+      color: #fff;
+    }
+    .error-desc {
+      font-size: 1.05rem;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 36px;
+      line-height: 1.7;
+    }
+    .error-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .error-buttons .btn {
+      padding: 16px 32px;
+    }
+    .error-search {
+      margin-top: 40px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .error-search h4 {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 16px;
+      font-weight: 600;
+    }
+    .error-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .error-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-full);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all var(--transition-normal);
+      text-decoration: none;
+      backdrop-filter: blur(10px);
+    }
+    .error-link:hover {
+      background: var(--gradient-red);
+      border-color: var(--accent-red);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-red);
+    }
+    .error-link i {
+      color: var(--accent-red-light);
+    }
+    .error-link:hover i {
+      color: #FFD700;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <div class="error-bg"></div>
+    <div class="error-content">
+      <img src="../assets/logo/hm-logo.png" alt="HM Carpets" class="error-logo" />
+      <div class="error-code">404</div>
+      <h1 class="error-title">Oops! Page Not Found</h1>
+      <p class="error-desc">The page you're looking for seems to have wandered off. But don't worry — let us guide you back to our premium collection.</p>
+      
+      <div class="error-buttons">
+        <a href="../index.html" class="btn btn-primary">
+          <i class="fas fa-home"></i>
+          <span>Back to Home</span>
+        </a>
+        <a href="https://wa.me/923256881111" target="_blank" rel="noopener" class="btn btn-outline-light">
+          <i class="fab fa-whatsapp"></i>
+          <span>Need Help?</span>
+        </a>
+      </div>
+
+      <div class="error-search">
+        <h4>Or explore these popular pages:</h4>
+        <div class="error-links">
+          <a href="products.html" class="error-link"><i class="fas fa-th-large"></i> Products</a>
+          <a href="carpets.html" class="error-link"><i class="fas fa-square"></i> Carpets</a>
+          <a href="janamaz.html" class="error-link"><i class="fas fa-mosque"></i> Janamaz</a>
+          <a href="mats.html" class="error-link"><i class="fas fa-grip"></i> Mats</a>
+          <a href="wholesale.html" class="error-link"><i class="fas fa-warehouse"></i> Wholesale</a>
+          <a href="gallery.html" class="error-link"><i class="fas fa-images"></i> Gallery</a>
+          <a href="contact.html" class="error-link"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
